@@ -16,8 +16,17 @@ const createPet = function (name, species) {
         this.sleep();
       } else {
         console.log(`Yay! ${this.name} loves to play!`);
+        this.isTired += 1;
       }
     },
   };
   return pet;
 };
+
+const sora = createPet("Sora", "ferret");
+const clover = createPet("Clover", "rabbit");
+const baxter = createPet("Baxter", "hamster");
+const cleo = createPet("Cleo", "rat");
+const francine = createPet("Francine", "turtle");
+
+console.log(sora, clover, baxter, cleo, francine);
